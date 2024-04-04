@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Footer } from "./footer";
 
 export const Background = () => {
   useEffect(() => {
@@ -22,6 +23,8 @@ export const Background = () => {
     function animate() {
       if (paused) return;
       v2.currentTime = window.scrollY / speed;
+
+      console.log("speed", speed);
       requestAnimationFrame(animate);
     }
 
@@ -46,6 +49,7 @@ export const Background = () => {
           type="video/mp4"
         />
       </video>
+      <Footer />
     </div>
   );
 };
