@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { cn } from "@/utils/cn";
-import { PauseIcon, PlayIcon } from "@/components/icons";
+import { PauseIcon, PlayIcon } from "./icons";
 
 export const Audio = () => {
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
@@ -14,6 +14,7 @@ export const Audio = () => {
   function onClick() {
     setIsPlaying(!isPlaying);
 
+    console.log("isPlaying button clicked", isPlaying);
     if (isPlaying) {
       a0.pause();
     }
@@ -30,16 +31,9 @@ export const Audio = () => {
         <PauseIcon className={cn("", isPlaying ? "block" : "hidden")} />
         <PlayIcon className={cn("", isPlaying ? "hidden" : "block")} />
       </button>
-      <audio
-        autoPlay
-        loop
-        id="audio"
-        playsInline
-        preload="preload"
-        className="absolute "
-      >
+      <audio loop id="audio" playsInline preload="auto" className="absolute ">
         <source
-          src="https://utfs.io/f/9bbb0b6f-aa93-4cb7-b34d-0685685ba7ae-ecqv0m.mp3"
+          src="https://d3v5naxe3z2qca.cloudfront.net/laugh-forget-book-audio.mp3"
           type="audio/mp3"
         />
       </audio>
