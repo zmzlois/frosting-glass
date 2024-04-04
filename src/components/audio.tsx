@@ -14,7 +14,6 @@ export const Audio = () => {
   function onClick() {
     setIsPlaying(!isPlaying);
 
-    console.log("isPlaying button clicked", isPlaying);
     if (isPlaying) {
       a0.pause();
     }
