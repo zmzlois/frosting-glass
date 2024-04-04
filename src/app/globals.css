@@ -26,6 +26,12 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer base {
+  a {
+    @apply text-yellow-200/60 underline underline-offset-4 decoration-yellow-200/60;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

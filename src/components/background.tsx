@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { Footer } from "@/components/footer";
 
 export const Background = () => {
   useEffect(() => {
@@ -52,6 +53,7 @@ export const Background = () => {
           type="video/mp4"
         />
       </video>
+      <Footer />
     </div>
   );
 };
