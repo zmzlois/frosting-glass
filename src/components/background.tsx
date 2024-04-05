@@ -24,7 +24,6 @@ export const Background = () => {
       if (paused) return;
       v2.currentTime = window.scrollY / speed;
 
-      console.log("speed", speed);
       requestAnimationFrame(animate);
     }
 
