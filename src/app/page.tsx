@@ -19,13 +19,13 @@ export async function generateMetadata({
       title: "Glass in the forest",
       description: "Recreating Shuding's glass effect",
       url: `https://loiszhao.com/glass`,
-      images: ["/glass-background.png"],
+      images: ["/frosting-glass-cover.jpg"],
     },
     twitter: {
       title: "Glass in the forest",
       description: "Recreating Shuding's glass effect",
       card: "summary_large_image",
-      images: ["/glass-background.png"],
+      images: ["/frosting-glass-cover.jpg"],
     },
     metadataBase: new URL("https://loiszhao.com"),
   };

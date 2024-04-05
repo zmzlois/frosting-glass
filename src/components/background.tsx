@@ -43,7 +43,7 @@ export const Background = () => {
       <video
         id="v2"
         preload="auto"
-        poster="/glass-background.png"
+        poster="https://d3v5naxe3z2qca.cloudfront.net/forest-vid-fallback.png"
         className=" w-screen inset-0  top-0 h-screen left-0 fixed z-30 object-cover"
       >
         <source
