@@ -51,6 +51,10 @@ export const Background = () => {
           type="video/mp4"
         />
         <source
+          src="https://d3v5naxe3z2qca.cloudfront.net/forest-outfile.h264"
+          type="video/h264"
+        />
+        <source
           src="https://d3v5naxe3z2qca.cloudfront.net/output_960.mp4"
           type="video/mp4"
         />
