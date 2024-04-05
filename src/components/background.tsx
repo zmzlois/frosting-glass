@@ -1,9 +1,13 @@
 "use client";
+// @eslint-ignore
 
 import { useEffect, useState } from "react";
 import { Footer } from "./footer";
+import Image from "next/image";
 
 export const Background = () => {
+  const innerWidth = typeof window !== "undefined" ? window.innerWidth : 0;
+  const innerHeight = typeof window !== "undefined" ? window.innerHeight : 0;
   useEffect(() => {
     let speed = 500;
 
@@ -43,9 +47,19 @@ export const Background = () => {
         className=" w-screen inset-0  top-0 h-screen left-0 fixed z-30 object-cover"
       >
         <source
-          className="rounded-2xl "
           src="https://d3v5naxe3z2qca.cloudfront.net/output_1920.mp4"
           type="video/mp4"
+        />
+        <source
+          src="https://d3v5naxe3z2qca.cloudfront.net/output_960.mp4"
+          type="video/mp4"
+        />
+        <Image
+          width={1200}
+          height={800}
+          src="https://d3v5naxe3z2qca.cloudfront.net/forest-vid-fallback.png"
+          alt="Your browser does not support the <video> tag"
+          title="Your browser does not support the <video> tag"
         />
       </video>
       <Footer />
